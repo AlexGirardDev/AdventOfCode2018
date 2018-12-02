@@ -1,0 +1,11 @@
+C:\Dropbox\Github\AdventOfCode2018\AdventOfCode2018\bin\Debug\netcoreapp2.1\AdventOfCode2018.deps.json
+C:\Dropbox\Github\AdventOfCode2018\AdventOfCode2018\bin\Debug\netcoreapp2.1\AdventOfCode2018.runtimeconfig.json
+C:\Dropbox\Github\AdventOfCode2018\AdventOfCode2018\bin\Debug\netcoreapp2.1\AdventOfCode2018.runtimeconfig.dev.json
+C:\Dropbox\Github\AdventOfCode2018\AdventOfCode2018\bin\Debug\netcoreapp2.1\AdventOfCode2018.dll
+C:\Dropbox\Github\AdventOfCode2018\AdventOfCode2018\bin\Debug\netcoreapp2.1\AdventOfCode2018.pdb
+C:\Dropbox\Github\AdventOfCode2018\AdventOfCode2018\obj\Debug\netcoreapp2.1\AdventOfCode2018.csprojAssemblyReference.cache
+C:\Dropbox\Github\AdventOfCode2018\AdventOfCode2018\obj\Debug\netcoreapp2.1\AdventOfCode2018.csproj.CoreCompileInputs.cache
+C:\Dropbox\Github\AdventOfCode2018\AdventOfCode2018\obj\Debug\netcoreapp2.1\AdventOfCode2018.AssemblyInfoInputs.cache
+C:\Dropbox\Github\AdventOfCode2018\AdventOfCode2018\obj\Debug\netcoreapp2.1\AdventOfCode2018.AssemblyInfo.cs
+C:\Dropbox\Github\AdventOfCode2018\AdventOfCode2018\obj\Debug\netcoreapp2.1\AdventOfCode2018.dll
+C:\Dropbox\Github\AdventOfCode2018\AdventOfCode2018\obj\Debug\netcoreapp2.1\AdventOfCode2018.pdb
