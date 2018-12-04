@@ -1,5 +1,7 @@
 ﻿using System;
 using AdventOfCode2018.Puzzles.Day1;
+using AdventOfCode2018.Puzzles.Day2;
+using AdventOfCode2018.Puzzles.Day3;
 
 namespace AdventOfCode2018
 {
@@ -7,7 +9,9 @@ namespace AdventOfCode2018
     {
         static void Main(string[] args)
         {
-            Day1.Solve();
+        //    Day1.Solve();
+            //Day2.Solve();
+            Day3.Solve();
             Console.ReadKey();
         }
     }
