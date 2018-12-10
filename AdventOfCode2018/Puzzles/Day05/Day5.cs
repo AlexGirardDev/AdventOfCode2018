@@ -4,91 +4,91 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 
-namespace AdventOfCode2018.Puzzles.Day2
+namespace AdventOfCode2018.Puzzles.Day05
 {
-    public static class Day2
+    public static class Day5
     {
-        
+
         public static void Solve()
         {
-            Console.WriteLine($"===Day 2===");
-            var puzzleInput = File.ReadAllLines("../../../Input/Day2.txt");
-       
-            {//Part 1
-
-                int[,] array= new int[10000,10000];
-                List<Fabric> fabrics = new List<Fabric>();
-                foreach (var s in puzzleInput)
-                {
-                    //#10 @ 322,450: 14x11
-                    Fabric fabric = new Fabric();
-                    fabric.Id = int.Parse(s.Split('@').First().Replace("#", "").Trim());
-                    fabric.X = int.Parse(s.Split('@').Last().Split(':').First().Split(',').First());
-                    fabric.Y = int.Parse(s.Split('@').Last().Split(':').First().Split(',').Last());
-                    fabric.Width = int.Parse(s.Split('@').Last().Split(':').Last().Split('x').First());
-                    fabric.Height = int.Parse(s.Split('@').Last().Split(':').Last().Split('x').Last());
-                    fabrics.Add(fabric);
-                }
+            Console.WriteLine($"===Day 5===");
 
 
-                foreach (var fabric in fabrics)
-                {
-                    for (int i = 0; i < fabric.Width; i++)
-                    {
-                        for (int r = 0; r < fabric.Height; r++)
-                        {
-                            array[fabric.X + i,fabric.Y+r]++;
-                        }
-                    }
-                    
-                }
+            {
+                var puzzleInput = File.ReadAllText("../../../Input/Day5.txt");
+                //Part 1
+                Dictionary<string, string> keys = new Dictionary<string, string>();
 
-                foreach (var fabric in fabrics)
-                {
-                    bool lol = false;
-                    for (int i = 0; i < fabric.Width; i++)
-                    {
-                        for (int r = 0; r < fabric.Height; r++)
-                        {
-                            if (array[fabric.X + i, fabric.Y + r] >1)
-                                lol = true;
-                        }
-                    }
-
-                    if (!lol)
-                    {
-                        var lsol = "";
-                    }
-
-                }
-
-                int counter = 0;
-                for (int k = 0; k < array.GetLength(0); k++)
-                for (int l = 0; l < array.GetLength(1); l++)
-                {
-                    if (array[k, l] > 1) counter++;
-                }
+                Console.WriteLine($"Part 1: {FullyReact(puzzleInput)}");
             }
 
-            {//Part 2
-              
+            {
+
+                var puzzleInput = File.ReadAllText("../../../Input/Day5.txt");
+                int lowestCount = puzzleInput.Length;
+                for (char c = 'A'; c <= 'Z'; c++)
+                {
+                    int count = FullyReact(
+                        puzzleInput.Replace(c.ToString(), "").Replace(Char.ToLower(c).ToString(), ""));
+                    if (count < lowestCount)
+                        lowestCount = count;
+                }
+
+                Console.WriteLine($"Part 2: {lowestCount}");
             }
         }
-    }
 
-    public class Fabric
-    {
 
-        public int Id { get; set; } 
-        public int X { get; set; }
-        public int Y { get; set; }
-        public int Width { get; set; }
-        public int Height { get; set; }
+        public static int FullyReact(string puzzleInput)
+        {
+            try
+            {
+
+
+                while (true)
+                {
+                    for (int i = 0; i < puzzleInput.Length; i++)
+                    {
+                        if (Char.IsUpper(puzzleInput[i]) && puzzleInput[i + 1].Equals(Char.ToLower(puzzleInput[i])))
+                        {
+                            puzzleInput = puzzleInput.Remove(i, 2);
+                            if (i < 2)
+                                i = 0;
+                            else
+                                i--;
+                            i--;
+                        }
+
+                        else if (Char.IsLower(puzzleInput[i]) &&
+                                 puzzleInput[i + 1].Equals(Char.ToUpper(puzzleInput[i])))
+                        {
+                            puzzleInput = puzzleInput.Remove(i, 2);
+                            if (i < 2)
+                                i = 0;
+                            else
+                                i--;
+                            i--;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            return puzzleInput.Length;
+
+        }
     }
 }
+
+
 
 
 

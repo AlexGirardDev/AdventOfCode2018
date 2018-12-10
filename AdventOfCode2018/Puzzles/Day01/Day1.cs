@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 
-namespace AdventOfCode2018.Puzzles.Day1
+namespace AdventOfCode2018.Puzzles.Day01
 {
     public static class Day1
     {

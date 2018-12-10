@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 
-namespace AdventOfCode2018.Puzzles.Day3
+namespace AdventOfCode2018.Puzzles.Day03
 {
     public static class Day3
     {

@@ -1,0 +1,1 @@
+﻿I just hard coded my input since there was just 2 values
