@@ -28,3 +28,11 @@ AdventOfCode2018/obj/Release/netcoreapp2.1/TemporaryGeneratedFile_036C0B5B-1481-
 AdventOfCode2018/obj/Release/netcoreapp2.1/AdventOfCode2018.csproj.FileListAbsolute.txt
 AdventOfCode2018/obj/Release/netcoreapp2.1/AdventOfCode2018.AssemblyInfo.cs
 AdventOfCode2018/obj/Debug/netcoreapp2.1/AdventOfCode2018.pdb
+*.dll
+.vs/AdventOfCode2018/xs/UserPrefs.xml
+*.dll
+*.pdb
+*.user
+*.cache
+AdventOfCode2018/obj/Debug/netcoreapp2.1/AdventOfCode2018.dll
+AdventOfCode2018/obj/Debug/netcoreapp2.1/AdventOfCode2018.pdb
