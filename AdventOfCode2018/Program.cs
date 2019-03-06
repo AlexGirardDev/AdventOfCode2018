@@ -26,7 +26,7 @@ namespace AdventOfCode2018
             //Day7.Solve();
             //Day8.Solve();;
             ////Day9.Solve(); // this takes like 40 minutes lol
-            Day11.Solve();
+            Day18.Solve();
             Console.ReadKey();
         }
     }

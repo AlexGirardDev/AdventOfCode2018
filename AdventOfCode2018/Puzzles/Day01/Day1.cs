@@ -10,17 +10,19 @@ namespace AdventOfCode2018.Puzzles.Day01
 {
     public static class Day1
     {
-        
+
         public static void Solve()
         {
             Console.WriteLine($"===Day 1===");
             var puzzleInput = File.ReadAllLines("../../../Input/Day1.txt");
-       
-            {//Part 1
-                Console.WriteLine($"Part 1: { puzzleInput.Sum(int.Parse)}");
+
+            {
+                //Part 1
+                Console.WriteLine($"Part 1:{puzzleInput.Sum(int.Parse)}");
             }
 
-            {//Part 2
+            {
+                //Part 2
                 List<int> states = new List<int>();
                 states.Add(0);
                 int freq = 0;
@@ -34,6 +36,7 @@ namespace AdventOfCode2018.Puzzles.Day01
                             Console.WriteLine($"Part 2: {freq}");
                             return;
                         }
+
                         states.Add(freq);
 
                     }
@@ -43,3 +46,4 @@ namespace AdventOfCode2018.Puzzles.Day01
         }
     }
 }
+
